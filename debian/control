@@ -3,13 +3,12 @@ Section: science
 Priority: extra
 Maintainer: Normand Chamberland <gemnoc@gmail.com>
 Uploaders: sgrogan <clhclh@earthlink.net>
-Vcs-Browser: https://git.launchpad.net/freecad
-Vcs-Git: git://git.launchpad.net/freecad
+Vcs-Browser: https://code.launchpad.net/~freecad-maintainers/+git/gitmaster
+Vcs-Git: git://git.launchpad.net/~freecad-maintainers/+git/gitmaster
 Homepage: http://www.freecadweb.org/
 Build-Depends:
  cmake,
  debhelper (>= 9),
- git,
  libboost-dev (>= 1.55) | libboost1.55-dev,
  libboost-filesystem-dev (>= 1.55) | libboost-filesystem1.55-dev,
  libboost-program-options-dev (>= 1.55) | libboost-program-options1.55-dev,
@@ -31,13 +30,14 @@ Build-Depends:
  libspnav-dev,
  libxerces-c-dev,
  libzipios++-dev,
+ lsb-release,
  netgen-headers,
  oce-draw,
  pyside-tools,
  python-dev,
  python-ply,
  swig
-Standards-Version: 3.9.6
+Standards-Version: 3.9.5
 
 Package: freecad
 Architecture: any

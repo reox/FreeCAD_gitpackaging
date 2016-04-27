@@ -8,6 +8,8 @@ endif
 	dh $@ --buildsystem=cmake --parallel --with python2
 
 DEB_BUILD_GNU_TYPE  ?= $(shell dpkg-architecture -qDEB_BUILD_GNU_TYPE)
+UBUNTU_CODENAME  := $(shell lsb_release -sc)
+UBUNTU_RELEASE  := $(shell lsb_release -sr)
 
 extra_flags += \
 -DFREECAD_BUILD_DEBIAN=ON \
@@ -23,6 +25,17 @@ extra_flags += \
 
 override_dh_auto_configure:
 	dh_auto_configure -- $(extra_flags)
+	# fix for Ubuntu bug - 1556680
+	# https://bugs.launchpad.net/ubuntu/+source/oce/+bug/1556680
+ifeq ($(UBUNTU_RELEASE),16.04)
+ifeq ($(DEB_TARGET_ARCH),amd64)
+	grep -rl '/usr/lib/libfreeimage.so' obj-$(DEB_BUILD_GNU_TYPE)/ |\
+	xargs sed -i 's/\/usr\/lib\/libfreeimage.so/\/usr\/lib\/x86_64-linux-gnu\/libfreeimage.so/g'
+else ifeq ($(DEB_TARGET_ARCH),i386)
+	grep -rl '/usr/lib/libfreeimage.so' obj-$(DEB_BUILD_GNU_TYPE)/ |\
+	xargs sed -i 's/\/usr\/lib\/libfreeimage.so/\/usr\/lib\/i386-linux-gnu\/libfreeimage.so/g'
+endif
+endif
 
 override_dh_compress:
 	dh_compress -X.qch -X.qhc
