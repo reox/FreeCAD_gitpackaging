@@ -25,6 +25,7 @@ extra_flags += \
 
 override_dh_auto_configure:
 	dh_auto_configure -- $(extra_flags)
+	cp -f src/Build/Version.h obj-$(DEB_BUILD_GNU_TYPE)/src/Build/Version.h
 	# fix for Ubuntu bug - 1556680
 	# https://bugs.launchpad.net/ubuntu/+source/oce/+bug/1556680
 ifeq ($(UBUNTU_RELEASE),16.04)
