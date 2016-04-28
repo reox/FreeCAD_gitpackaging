@@ -1,8 +1,8 @@
-freecad (1:0.17~alpha1-1xenial1) xenial; urgency=low
+freecad-daily (1:0.17~alpha1-1xenial1) xenial; urgency=low
 
   * Daily build of freecad 0.17 development version.
 
- -- Normand Chamberland <gemnoc@gmail.com>  Wed, 27 Apr 2016 21:04:46 -0400
+ -- Normand Chamberland <gemnoc@gmail.com>  Wed, 27 Apr 2016 21:23:15 -0400
 
 freecad (1:0.16.6700-1ppa1~xenial1) xenial; urgency=low
 

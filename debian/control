@@ -16,7 +16,7 @@ Build-Depends:
  libboost-regex-dev (>= 1.55) | libboost-regex1.55-dev,
  libboost-signals-dev (>= 1.55) | libboost-signals1.55-dev,
  libboost-thread-dev (>= 1.55) | libboost-thread1.55-dev,
- libcoin60-dev | libcoin80-dev,
+ libcoin80-dev,
  libeigen3-dev,
  libfreeimage-dev,
  libfreetype6-dev,
@@ -39,7 +39,7 @@ Build-Depends:
  swig
 Standards-Version: 3.9.5
 
-Package: freecad
+Package: freecad-daily
 Architecture: any
 Depends:
  python-pivy,
@@ -68,7 +68,7 @@ Description: Extensible Open Source CAx program (beta)
  The interface is built with Qt. FreeCAD runs exactly the same way on Windows, Mac OSX, BSD and
  Linux platforms.
 
-Package: freecad-dev
+Package: freecad-daily-dev
 Architecture: any
 Section: libdevel
 Depends:
@@ -86,7 +86,7 @@ Description: FreeCAD development files
  This package contains headers and symlinks necessary to
  develop modules for FreeCAD.
 
-Package: freecad-doc
+Package: freecad-daily-doc
 Architecture: all
 Section: doc
 Depends:

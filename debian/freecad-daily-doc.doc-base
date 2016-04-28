@@ -11,4 +11,4 @@ Abstract: FreeCAD is a general purpose Open Source 3D
 Section: Science/Engineering
 
 Format: HTML
-Files: /usr/share/doc/freecad-doc/*.q*
+Files: /usr/share/doc/freecad-daily-doc/*.q*
