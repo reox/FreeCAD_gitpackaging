@@ -4,7 +4,7 @@
         <schema>
             <key>/schemas/desktop/gnome/thumbnailers/application@x-extension-fcstd/enable</key>
             <applyto>/desktop/gnome/thumbnailers/application@x-extension-fcstd/enable</applyto>
-            <owner>freecad</owner>
+            <owner>freecad-daily</owner>
             <type>bool</type>
             <default>true</default>
             <locale name="C">
@@ -17,12 +17,12 @@
         <schema>
             <key>/schemas/desktop/gnome/thumbnailers/application@x-extension-fcstd/command</key>
             <applyto>/desktop/gnome/thumbnailers/application@x-extension-fcstd/command</applyto>
-            <owner>freecad</owner>
+            <owner>freecad-daily</owner>
             <type>string</type>
-            <default>/usr/bin/freecad-thumbnailer -s %s %u %o</default>
+            <default>/usr/bin/freecad-daily-thumbnailer -s %s %u %o</default>
             <locale name="C">
                 <short>Thumbnail command for documents from FreeCAD.</short>
-                <long>Valid command plus arguments for freecad-thumbnailer.</long>
+                <long>Valid command plus arguments for freecad-daily-thumbnailer.</long>
             </locale>
         </schema>
 

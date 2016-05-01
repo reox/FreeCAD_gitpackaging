@@ -46,15 +46,14 @@ override_dh_installchangelogs:
 	
 override_dh_installmime:
 	dh_installmime
-	dh_install debian/mime/freecad-thumbnailer usr/bin
-	dh_install debian/mime/freecad.thumbnailer usr/share/thumbnailers
-	dh_install debian/mime/freecad.schemas etc/gconf/schemas
+	dh_install debian/mime/freecad-daily-thumbnailer usr/bin
+	dh_install debian/mime/freecad-daily.thumbnailer usr/share/thumbnailers
+	dh_install debian/mime/freecad-daily.schemas etc/gconf/schemas
 
 override_dh_icons:
-	install -m 644 debian/freecad/usr/share/freecad/freecad-icon-16.png debian/freecad/usr/share/icons/hicolor/16x16/apps/freecad.png
-	install -m 644 debian/freecad/usr/share/freecad/freecad-icon-32.png debian/freecad/usr/share/icons/hicolor/32x32/apps/freecad.png
-	install -m 644 debian/freecad/usr/share/freecad/freecad-icon-32.png debian/freecad/usr/share/icons/hicolor/48x48/apps/freecad.png
-	install -m 644 debian/freecad/usr/share/freecad/freecad-icon-64.png debian/freecad/usr/share/icons/hicolor/64x64/apps/freecad.png
-	install -m 644 debian/freecad/usr/share/freecad/freecad.svg debian/freecad/usr/share/icons/hicolor/scalable/apps/freecad.svg
-	install -m 644 debian/freecad/usr/share/freecad/freecad-doc.png debian/freecad/usr/share/icons/hicolor/64x64/mimetypes/application-x-extension-fcstd.png
+	install -m 644 debian/freecad-daily/usr/share/freecad-daily/freecad-icon-16.png debian/freecad-daily/usr/share/icons/hicolor/16x16/apps/freecad-daily.png
+	install -m 644 debian/freecad-daily/usr/share/freecad-daily/freecad-icon-32.png debian/freecad-daily/usr/share/icons/hicolor/32x32/apps/freecad-daily.png
+	install -m 644 debian/freecad-daily/usr/share/freecad-daily/freecad-icon-32.png debian/freecad-daily/usr/share/icons/hicolor/48x48/apps/freecad-daily.png
+	install -m 644 debian/freecad-daily/usr/share/freecad-daily/freecad-icon-64.png debian/freecad-daily/usr/share/icons/hicolor/64x64/apps/freecad-daily.png
+	install -m 644 debian/freecad-daily/usr/share/freecad-daily/freecad.svg debian/freecad-daily/usr/share/icons/hicolor/scalable/apps/freecad-daily.svg
 

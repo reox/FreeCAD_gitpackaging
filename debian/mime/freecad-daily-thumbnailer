@@ -24,8 +24,8 @@ try:
 	if image in files:
 		image=zfile.read(image)
 	else:
-		#freecad=open("/usr/share/freecad/freecad-doc.png")
-		#image=freecad.read()
+		#freecad-daily=open("/usr/share/freecad-daily/freecad-doc.png")
+		#image=freecad-daily.read()
 		sys.exit(1)
 
 	thumb=open(outfile,"wb")
