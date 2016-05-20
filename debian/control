@@ -36,7 +36,7 @@ Build-Depends:
  pyside-tools,
  python-dev,
  python-ply,
- swig
+ swig,
  libvtk6-dev
 Standards-Version: 3.9.5
 
