@@ -36,8 +36,7 @@ Build-Depends:
  pyside-tools,
  python-dev,
  python-ply,
- swig,
- libvtk6-dev
+ swig
 Standards-Version: 3.9.5
 
 Package: freecad-daily
