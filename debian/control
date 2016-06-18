@@ -20,6 +20,8 @@ Build-Depends:
  libeigen3-dev,
  libfreeimage-dev,
  libfreetype6-dev,
+ libhdf5-mpi-dev,
+ libmedc-dev,
  liboce-ocaf-dev,
  liboce-visualization-dev,
  libpyside-dev,
@@ -36,7 +38,8 @@ Build-Depends:
  pyside-tools,
  python-dev,
  python-ply,
- swig
+ swig,
+ libvtk6-dev
 Standards-Version: 3.9.5
 
 Package: freecad-daily
