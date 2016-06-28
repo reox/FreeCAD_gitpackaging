@@ -29,18 +29,6 @@ override_dh_auto_configure:
 	cp -f src/Build/Version.h obj-$(DEB_BUILD_GNU_TYPE)/src/Build/Version.h
 	# fix for Ubuntu bug - 1556680
 	# https://bugs.launchpad.net/ubuntu/+source/oce/+bug/1556680
-ifeq ($(UBUNTU_RELEASE),16.04)
-ifeq ($(DEB_TARGET_ARCH),amd64)
-	grep -rl '/usr/lib/libfreeimage.so' obj-$(DEB_BUILD_GNU_TYPE)/ |\
-	xargs sed -i 's/\/usr\/lib\/libfreeimage.so/\/usr\/lib\/x86_64-linux-gnu\/libfreeimage.so/g'
-else ifeq ($(DEB_TARGET_ARCH),i386)
-	grep -rl '/usr/lib/libfreeimage.so' obj-$(DEB_BUILD_GNU_TYPE)/ |\
-	xargs sed -i 's/\/usr\/lib\/libfreeimage.so/\/usr\/lib\/i386-linux-gnu\/libfreeimage.so/g'
-else ifeq ($(DEB_TARGET_ARCH),arm64)
-	grep -rl '/usr/lib/libfreeimage.so' obj-$(DEB_BUILD_GNU_TYPE)/ |\
-	xargs sed -i 's/\/usr\/lib\/libfreeimage.so/\/usr\/lib\/aarch64-linux-gnu\/libfreeimage.so/g'
-endif
-endif
 
 override_dh_compress:
 	dh_compress -X.qch -X.qhc
