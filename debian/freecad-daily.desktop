@@ -1,9 +1,9 @@
 [Desktop Entry]
-Version=1.0
+Version=1.1
 Name=FreeCAD Daily
 Comment=Feature based Parametric Modeler
 GenericName=CAD Application
-Exec=/usr/bin/freecad-daily %F
+Exec=/usr/bin/freecad-daily --single-instance %U
 Path=/usr/lib/freecad-daily
 Terminal=false
 Type=Application
