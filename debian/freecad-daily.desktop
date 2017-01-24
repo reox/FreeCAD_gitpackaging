@@ -4,7 +4,6 @@ Name=FreeCAD Daily
 Comment=Feature based Parametric Modeler
 GenericName=CAD Application
 Exec=/usr/bin/freecad-daily --single-instance %U
-Path=/usr/lib/freecad-daily
 Terminal=false
 Type=Application
 Icon=freecad
