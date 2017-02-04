@@ -45,6 +45,7 @@ Standards-Version: 3.9.5
 Package: freecad-daily
 Architecture: any
 Depends:
+ libfontconfig1-dev,
  python-matplotlib,
  python-pivy,
  python-pyside.qtcore,
