@@ -72,24 +72,6 @@ Description: Extensible Open Source CAx program (beta)
  The interface is built with Qt. FreeCAD runs exactly the same way on Windows, Mac OSX, BSD and
  Linux platforms.
 
-Package: freecad-daily-dev
-Architecture: any
-Section: libdevel
-Depends:
- ${shlibs:Depends},
- ${misc:Depends},
- freecad-daily (= ${binary:Version})
-Description: FreeCAD development files
- FreeCAD is a general purpose feature-based, parametric 3D modeler for CAD, MCAD,
- CAx, CAE and PLM, aimed directly at mechanical engineering and product design but
- also fits a wider range of uses in engineering, such as architecture or other engineering
- specialties. It is 100% Open Source (LGPL2+ license) and extremely modular, allowing
- for very advanced extension and customization.
- For more details see http://www.freecadweb.org/
- .
- This package contains headers and symlinks necessary to
- develop modules for FreeCAD.
-
 Package: freecad-daily-doc
 Architecture: all
 Section: doc
