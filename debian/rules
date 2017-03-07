@@ -19,6 +19,7 @@ extra_flags += \
 -DCMAKE_C_FLAGS="-Wall -fpermissive $(shell dpkg-buildflags --get CFLAGS) $(shell dpkg-buildflags --get CPPFLAGS)" \
 -DCMAKE_SHARED_LINKER_FLAGS="$(shell dpkg-buildflags --get LDFLAGS)" \
 -DLIB_SUFFIX="" \
+-DFREECAD_USE_OCC_VARIANT="Official Version" \
 -DOCC_INCLUDE_DIR="/usr/include/opencascade" \
 -DCMAKE_INSTALL_PREFIX="/usr/lib/freecad-daily" \
 -DCMAKE_INSTALL_DATADIR="/usr/share/freecad-daily" \
