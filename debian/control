@@ -21,6 +21,7 @@ Build-Depends:
  libfreeimage-dev,
  libfreetype6-dev,
  libmedc-dev,
+ libopencascade-data-exchange-dev,
  libopencascade-ocaf-dev,
  libopencascade-visualization-dev,
  libproj-dev,
