@@ -24,6 +24,7 @@ Build-Depends:
  libopencascade-data-exchange-dev,
  libopencascade-ocaf-dev,
  libopencascade-visualization-dev,
+ libpcl-dev,
  libproj-dev,
  libpyside-dev,
  libqt4-dev,
