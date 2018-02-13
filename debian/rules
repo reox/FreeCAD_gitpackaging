@@ -13,7 +13,7 @@ UBUNTU_RELEASE  := $(shell lsb_release -sr)
 
 extra_flags += \
 -DFREECAD_BUILD_DEBIAN=ON \
--DFREECAD_USE_PCL \
+-DFREECAD_USE_PCL=ON \
 -DBUILD_FEM_NETGEN=OFF \
 -DBUILD_FEM_VTK=ON \
 -DCMAKE_CXX_FLAGS="-Wall -DHAVE_SWIG=1 -fpermissive $(shell dpkg-buildflags --get CXXFLAGS) $(shell dpkg-buildflags --get CPPFLAGS)" \
