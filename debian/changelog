@@ -1,3 +1,9 @@
+freecad-daily (0.17~beta1-1xenial1) xenial; urgency=low
+
+  * Bumping to Beta status.
+
+ -- Normand Chamberland <gemnoc@gmail.com>  Sun, 01 Apr 2018 13:34:11 -0400
+
 freecad-daily (0.17~alpha1-1xenial1) xenial; urgency=low
 
   * New package name for daily builds of FreeCAD development version
