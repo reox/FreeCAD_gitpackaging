@@ -25,10 +25,8 @@ extra_flags += \
 -DCMAKE_INSTALL_DOCDIR="/usr/share/doc/freecad-daily-doc" \
 
 override_dh_auto_configure:
-	dh_auto_configure -- $(extra_flags) -DCMAKE_CXX_COMPILER=/usr/bin/mpic++
+	dh_auto_configure -- $(extra_flags)
 	cp -f src/Build/Version.h obj-$(DEB_BUILD_GNU_TYPE)/src/Build/Version.h
-	# fix for Ubuntu bug - 1556680
-	# https://bugs.launchpad.net/ubuntu/+source/oce/+bug/1556680
 
 override_dh_compress:
 	dh_compress -X.qch -X.qhc
