@@ -1,5 +1,11 @@
 freecad-daily (0.18~beta1-1xenial1) xenial; urgency=low
 
+  * opencascade renamed to occt
+
+ -- sgrogan <clhclh@earthlink.net>  Tues, 10 Apr 2018 17:32:12 -0500
+
+freecad-daily (0.18~beta1-1xenial1) xenial; urgency=low
+
   * Bumping to 0.18
 
  -- sgrogan <clhclh@earthlink.net>  Mon, 09 Apr 2018 18:22:11 -0500
