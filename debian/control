@@ -21,7 +21,6 @@ Build-Depends:
  libfreeimage-dev,
  libfreetype6-dev,
  libmedc-dev,
- libmetis-dev,
  libnglib-6.2.1804,
  libocct-data-exchange-dev,
  libocct-ocaf-dev,
