@@ -6,40 +6,59 @@ Uploaders: sgrogan <clhclh@earthlink.net>
 Vcs-Browser: https://code.launchpad.net/~freecad-maintainers/+git/gitmaster
 Vcs-Git: git://git.launchpad.net/~freecad-maintainers/+git/gitmaster
 Homepage: http://www.freecadweb.org/
-Build-Depends:
- cmake,
- debhelper (>= 9),
- libboost-dev (>= 1.55) | libboost1.55-dev,
- libboost-filesystem-dev (>= 1.55) | libboost-filesystem1.55-dev,
- libboost-program-options-dev (>= 1.55) | libboost-program-options1.55-dev,
- libboost-python-dev (>= 1.55) | libboost-python1.55-dev,
- libboost-regex-dev (>= 1.55) | libboost-regex1.55-dev,
- libboost-signals-dev (>= 1.55) | libboost-signals1.55-dev,
- libboost-thread-dev (>= 1.55) | libboost-thread1.55-dev,
- libcoin80-dev,
- libeigen3-dev,
- libfreeimage-dev,
- libfreetype6-dev,
- libmedc-dev,
- libocct-data-exchange-dev,
- libocct-ocaf-dev,
- libocct-visualization-dev,
- libproj-dev,
- libpyside-dev,
- libqt4-dev,
- libqt4-opengl-dev,
- libqtwebkit-dev,
- libshiboken-dev,
- libspnav-dev,
- libxerces-c-dev,
- libzipios++-dev,
- lsb-release,
- occt-draw,
- pyside-tools,
- python-dev,
- python-ply,
- swig,
- libvtk6-dev
+Build-Depends: cmake,
+               debhelper (>= 11~),
+               dh-exec,
+               dh-python,
+               libboost-date-time-dev,
+               libboost-dev,
+               libboost-filesystem-dev,
+               libboost-graph-dev,
+               libboost-iostreams-dev,
+               libboost-program-options-dev,
+               libboost-python-dev,
+               libboost-regex-dev,
+               libboost-serialization-dev,
+               libboost-signals-dev,
+               libboost-thread-dev,
+               libcoin-dev,
+               libopencv-dev | libcv-dev,
+               libeigen3-dev (>= 3.3~beta1),
+               libgts-bin,
+               libgts-dev,
+               libkdtree++-dev,
+               libmedc-dev,
+               libocct-data-exchange-dev,
+               libocct-ocaf-dev,
+               libocct-visualization-dev,
+               libproj-dev,
+               libpyside2-dev,
+               libqt5opengl5-desktop-dev,
+               libqt5svg5-dev,
+               libqt5webkit5-dev,
+               libshiboken2-dev,
+               libspnav-dev,
+               libvtk6-dev,
+               libx11-dev,
+               libxerces-c-dev,
+               libzipios++-dev,
+               lsb-release,
+               occt-draw,
+               pyside2-tools,
+               python-pyside2.qtcore,
+               python-pyside2.qtgui,
+               python-pyside2.qtsvg,
+               python-pyside2.qtwidgets,
+               python-dev,
+               python-ply,
+               python3-pyside2.qtgui,
+               python3-pyside2.qtsvg,
+               python3-pyside2.qtwidgets,
+               python3-dev,
+               python3-ply,
+               qtbase5-dev,
+               qttools5-dev,
+               swig,
 Standards-Version: 3.9.5
 
 Package: freecad-daily
@@ -48,9 +67,10 @@ Depends:
  libfontconfig1-dev,
  python-matplotlib,
  python-pivy,
- python-pyside.qtcore,
- python-pyside.qtsvg,
- python-pyside.qtuitools,
+ python-pyside2.qtcore,
+ python-pyside2.qtgui,
+ python-pyside2.qtsvg,
+ python-pyside2uic,
  ${shlibs:Depends},
  ${misc:Depends},
  ${python:Depends}
@@ -77,7 +97,7 @@ Architecture: all
 Section: doc
 Depends:
  ${misc:Depends},
- qt4-dev-tools
+ qt5-assistant
 Description: FreeCAD documentation
  FreeCAD is a general purpose feature-based, parametric 3D modeler for CAD, MCAD,
  CAx, CAE and PLM, aimed directly at mechanical engineering and product design but
@@ -89,6 +109,4 @@ Description: FreeCAD documentation
  This package contains the FreeCAD documentation.
  .
  The documentation is provided in Qt's new help format;
- the new help format version can be viewed in conjunction with the Qt Assistant
- found in the qt4-dev-tools package.
-
+ the new help format version can be viewed in conjunction with Qt Assistant.
