@@ -24,7 +24,7 @@ extra_flags += \
 -DOCC_INCLUDE_DIR="/usr/include/occt" \
 -DCMAKE_INSTALL_PREFIX="/usr/lib/freecad-daily" \
 -DCMAKE_INSTALL_DATADIR="/usr/share/freecad-daily" \
--DCMAKE_INSTALL_LIBDIR="/usr/lib/freecad/lib" \
+-DCMAKE_INSTALL_LIBDIR="/usr/lib/freecad-daily/lib" \
 -DCMAKE_INSTALL_DOCDIR="/usr/share/doc/freecad-daily-doc" \
 
 override_dh_auto_configure:
