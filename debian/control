@@ -21,7 +21,7 @@ Build-Depends: cmake,
                libboost-serialization-dev,
                libboost-signals-dev,
                libboost-thread-dev,
-               libcoin-dev,
+               libcoin-dev (>= 4.0.0),
                libopencv-dev | libcv-dev,
                libeigen3-dev (>= 3.3~beta1),
                libgts-bin,
@@ -60,14 +60,14 @@ Build-Depends: cmake,
                qtbase5-dev,
                qttools5-dev,
                swig,
-Standards-Version: 3.9.5
+Standards-Version: 4.1.4
 
 Package: freecad-daily
 Architecture: any
 Depends:
  libfontconfig1-dev,
  python-matplotlib,
- python-pivy,
+ python-pivy (>= 0.6.4),
  python-pyside2.qtcore,
  python-pyside2.qtgui,
  python-pyside2.qtsvg,
