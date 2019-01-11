@@ -7,7 +7,8 @@ Vcs-Browser: https://code.launchpad.net/~freecad-maintainers/+git/gitmaster
 Vcs-Git: git://git.launchpad.net/~freecad-maintainers/+git/gitmaster
 Homepage: http://www.freecadweb.org/
 Build-Depends: cmake,
-               debhelper (>= 11~),
+               debhelper (>= 12~),
+               debhelper-compat (= 12),
                dh-exec,
                dh-python,
                libboost-date-time-dev,
