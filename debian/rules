@@ -5,14 +5,18 @@ ifeq ($(findstring parallel=,$(DEB_BUILD_OPTIONS)),)
 endif
 
 %:
-	dh $@ --buildsystem=cmake --parallel --with python2
+	dh $@ --buildsystem=cmake --parallel --with python3
 
 DEB_BUILD_GNU_TYPE  ?= $(shell dpkg-architecture -qDEB_BUILD_GNU_TYPE)
 
 extra_flags += \
 -DFREECAD_BUILD_DEBIAN=ON \
 -DBUILD_QT5=ON \
--DPYTHON_CONFIG_SUFFIX="-python2.7.${DEB_HOST_MULTIARCH}" \
+-DPYTHON_CONFIG_SUFFIX=".cpython-37m-${DEB_HOST_MULTIARCH}" \
+-DPYTHON_LIBRARY=/usr/lib/${DEB_BUILD_GNU_TYPE}/libpython3.7m.so \
+-DPYTHON_INCLUDE_DIR=/usr/include/python3.7m \
+-DPYTHON_PACKAGES_PATH=/usr/lib/python3.7 \
+-DPYTHON_EXECUTABLE=/usr/bin/python3.7 \
 -DBUILD_FEM_NETGEN=OFF \
 -DBUILD_FEM_VTK=ON \
 -DBUILD_FLAT_MESH=ON \
@@ -26,6 +30,7 @@ extra_flags += \
 -DCMAKE_INSTALL_DATADIR="/usr/share/freecad-daily" \
 -DCMAKE_INSTALL_LIBDIR="/usr/lib/freecad-daily/lib" \
 -DCMAKE_INSTALL_DOCDIR="/usr/share/doc/freecad-daily-doc" \
+
 
 override_dh_auto_configure:
 	dh_auto_configure -- $(extra_flags)
