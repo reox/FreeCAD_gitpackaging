@@ -1,6 +1,8 @@
 Source: freecad-daily
 Section: science
 Priority: extra
+Maintainer: Normand Chamberland <gemnoc@gmail.com>
+Uploaders: sgrogan <clhclh@earthlink.net>
 Vcs-Browser: https://github.com/FreeCAD/FreeCAD
 Vcs-Git: git://github.com/FreeCAD/FreeCAD.git
 Homepage: http://www.freecadweb.org/
