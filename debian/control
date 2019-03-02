@@ -59,6 +59,7 @@ Build-Depends: cmake,
                netgen,
                netgen-headers,
                python3-netgen,
+               libmetis-dev,
                swig,
 Build-Depends-Indep: doxygen
 Standards-Version: 4.1.4
