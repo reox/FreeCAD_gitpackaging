@@ -62,7 +62,7 @@ Build-Depends: cmake,
                libmetis-dev,
                swig,
 Build-Depends-Indep: doxygen
-Standards-Version: 4.1.4
+Standards-Version: 4.3.0
 
 Package: freecad-daily
 Architecture: any
@@ -75,12 +75,12 @@ Depends:
  python3-pyside2.qtsvg,
  python3-pyside2.qtwidgets,
  python3-pyside2uic,
+ netgen,
  ${shlibs:Depends},
  ${misc:Depends},
  ${python3:Depends}
 Recommends:
  calculix-ccx,
- netgen,
  graphviz
 Suggests:
  freecad-daily-doc,
