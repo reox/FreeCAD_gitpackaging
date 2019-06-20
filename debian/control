@@ -63,7 +63,9 @@ Build-Depends: cmake,
                netgen,
                netgen-headers,
                python3-netgen,
+               libpcl-dev,
                libmetis-dev,
+               python3-matplotlib,
                swig,
 Build-Depends-Indep: doxygen
 Standards-Version: 4.3.0
