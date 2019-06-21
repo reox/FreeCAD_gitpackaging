@@ -67,7 +67,8 @@ Build-Depends: cmake,
                libmetis-dev,
                python3-matplotlib,
                swig,
-Build-Depends-Indep: doxygen
+               doxygen,
+               graphviz,
 Standards-Version: 4.3.0
 
 Package: freecad-daily
