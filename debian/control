@@ -69,6 +69,7 @@ Build-Depends: cmake,
                swig,
                doxygen,
                graphviz,
+               libsalome-smesh-dev (>=8.3.0.2),
 Standards-Version: 4.3.0
 
 Package: freecad-daily
