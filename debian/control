@@ -67,6 +67,7 @@ Build-Depends: cmake,
                libmetis-dev,
                python3-matplotlib,
                swig,
+               shiboken2,
                doxygen,
                graphviz,
 Standards-Version: 4.3.0
