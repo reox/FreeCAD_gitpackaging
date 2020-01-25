@@ -70,6 +70,7 @@ Build-Depends: cmake,
                shiboken2,
                doxygen,
                graphviz,
+               libglvnd-dev
 Standards-Version: 4.3.0
 
 Package: freecad-daily
