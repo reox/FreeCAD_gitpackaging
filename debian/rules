@@ -11,7 +11,6 @@ export DEB_BUILD_MAINT_OPTIONS = hardening=+all,+bindnow
 extra_flags += \
 -DFREECAD_BUILD_DEBIAN=ON \
 -DBUILD_QT5=ON \
--DBUILD_FEM_NETGEN=ON \
 -DBUILD_FLAT_MESH=ON \
 -DFREECAD_USE_PYBIND11=ON \
 -DFREECAD_USE_PCL=ON \
@@ -25,6 +24,7 @@ extra_flags += \
 -DCMAKE_INSTALL_DATADIR="/usr/share/freecad-daily" \
 -DCMAKE_INSTALL_LIBDIR="/usr/lib/freecad-daily/lib" \
 -DCMAKE_INSTALL_DOCDIR="/usr/share/doc/freecad-daily-doc" \
+#-DBUILD_FEM_NETGEN=ON \
 
 
 override_dh_auto_configure:
