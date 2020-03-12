@@ -1,14 +1,10 @@
-Description: Fixes broken path for pyside in buster
-Author: Sebastian Bachmann <hello@reox.at>
-Last-Updated: 2020-03-12
+Fix pyside2 import
 --- a/CMakeLists.txt
 +++ b/CMakeLists.txt
-@@ -91,4 +91,12 @@ add_subdirectory(data)
+@@ -91,4 +91,10 @@
  
  CreatePackagingTargets()
  
-+
-+# FIX:
 +set_target_properties(PySide2::pyside2 PROPERTIES
 +  INTERFACE_COMPILE_DEFINITIONS "PYSIDE_QML_SUPPORT=1"
 +  INTERFACE_INCLUDE_DIRECTORIES "/usr/include/PySide2"
