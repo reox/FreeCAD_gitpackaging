@@ -1,1 +1,1 @@
-tar-ignore = ".git/*"
+tar-ignore = ".git/*" no-copy
