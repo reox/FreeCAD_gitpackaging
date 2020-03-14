@@ -14,6 +14,7 @@ extra_flags += \
 -DBUILD_FLAT_MESH=ON \
 -DFREECAD_USE_PYBIND11=ON \
 -DFREECAD_USE_PCL=ON \
+-DBUILD_FEM_NETGEN=ON \
 -DPYTHON_EXECUTABLE=/usr/bin/python3.8 \
 -DCMAKE_BUILD_TYPE=RelWithDebInfo \
 -DCMAKE_CXX_FLAGS="-Wall -DHAVE_SWIG=1 -fpermissive $(shell dpkg-buildflags --get CXXFLAGS) $(shell dpkg-buildflags --get CPPFLAGS)" \
@@ -24,7 +25,6 @@ extra_flags += \
 -DCMAKE_INSTALL_DATADIR="/usr/share/freecad-daily" \
 -DCMAKE_INSTALL_LIBDIR="/usr/lib/freecad-daily/lib" \
 -DCMAKE_INSTALL_DOCDIR="/usr/share/doc/freecad-daily-doc" \
-#-DBUILD_FEM_NETGEN=ON \
 
 
 override_dh_auto_configure:
