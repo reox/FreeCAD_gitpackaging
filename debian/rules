@@ -14,7 +14,7 @@ extra_flags += \
 -DBUILD_FLAT_MESH=ON \
 -DFREECAD_USE_PYBIND11=ON \
 -DFREECAD_USE_PCL=ON \
--DBUILD_FEM_NETGEN=ON \
+-DBUILD_FEM_NETGEN=OFF \
 -DPYTHON_EXECUTABLE=/usr/bin/python3.8 \
 -DCMAKE_BUILD_TYPE=RelWithDebInfo \
 -DCMAKE_CXX_FLAGS="-Wall -DHAVE_SWIG=1 -fpermissive $(shell dpkg-buildflags --get CXXFLAGS) $(shell dpkg-buildflags --get CPPFLAGS)" \
@@ -31,9 +31,9 @@ override_dh_auto_configure:
 	dh_auto_configure -- $(extra_flags)
 	cp -f src/Build/Version.h obj-$(DEB_BUILD_GNU_TYPE)/src/Build/Version.h
 
-override_dh_shlibdeps:
-	# FIXME Workaround before debian bug #924300 is fixed
-	dh_shlibdeps -l/usr/lib/${DEB_BUILD_GNU_TYPE}/netgen
+#override_dh_shlibdeps:
+#	# FIXME Workaround before debian bug #924300 is fixed
+#	dh_shlibdeps -l/usr/lib/${DEB_BUILD_GNU_TYPE}/netgen
 
 override_dh_compress:
 	dh_compress -X.qch -X.qhc
